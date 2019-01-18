@@ -13,7 +13,11 @@ body {
 }
 
 .main_container {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
   background-color: black;
+  box-sizing: border-box;
   max-width: 960px;/*for degugging*/
 }
 .banner,
@@ -102,52 +106,73 @@ body {
 .info_container {
   background-color: white;
   color:black;
+  border: 4px solid black;
 }
 .merchandise {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  border: 4px solid black;
   max-width: 960px;
   overflow:hidden;
 }
 
-.pen{
-  margin-top:3rem;
-  margin-right: 3rem;
-  margin-bottom:3rem;
+.merchandise_1{
   display:flex;
-
-
-  background-image: url("../images/pen.png");
-  background-position:center;
-
-  height:9rem;
-
-  width:150px;
-  padding:2rem 2rem;
+  flex-flow:column nowrap;
+  align-items: center;
+  margin-top:3rem;
+  margin-bottom:3rem;
+  border: 1px solid green;/*for degugging*/
+  width:30%;
 }
 
-.watch{
+.pen{
+  margin-top:2rem;
+
+  margin-bottom:2rem;
   display:flex;
-  margin-top:3rem;
-  margin-bottom:3rem;
-  flex-shrink: 1;
+
   background-image: url("../images/pen.png");
   background-position:center;
   background-size: cover;
+  border: 1px solid blue;/*for degugging*/
+  height:9rem;
 
+  width:150px;
+}
+.merchandise_1 h3 {
+  width:100%;
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  font-weight:bold;
+  font-size: 1rem;
+}
+
+.merchandise_2{
+  display:flex;
+  flex-flow: column nowrap;
+  margin-top:3rem;
+  margin-bottom:3rem;
+  width:30%;
   height: 15rem;
   border: 1px solid green;/*for degugging*/
 }
 
-.sunglasses {
+
+.merchandise_3 {
+  display:flex;
+  flex-flow: column nowrap;
   margin-top:3rem;
   margin-bottom:3rem;
+  width:30%;
   height:15rem;
 
   border: 1px solid purple;/*for degugging*/
+}
+.glasses{
+  border: 1px solid blue;/*for degugging*/
 }
 
 .info {
@@ -157,33 +182,46 @@ body {
   justify-content: space-between;
 }
 .location {
+  display:block;
+  box-sizing: border-box;
   border: 1px solid red;/*for degugging*/
-  background-color: black
+  background-color: black;
+  width:35%;
 
 }
 .location p {
+  margin-left:2rem;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
   color:white;
   width:100%;
 }
 .location span{
+  display:block;
   background-color: white;
   width:100%;
   color:black;
 }
 .info {
   max-width: 960px;
+  margin-bottom: 4rem;
 }
 .hours {
+  box-sizing: border-box;
   border: 1px solid green;/*for degugging*/
+  width:35%;
 }
 .hours p{
   display: block;
-  background-color: black
+  background-color: black;
+  padding-top: 1rem;
+  padding-left:2rem;
+  padding-bottom: 0.5rem;
   color:white;
+  width:100%
   border: 1px solid red;/*for degugging*/
 }
+
 /*end of info_container*/
 .footer {
   display: flex;
