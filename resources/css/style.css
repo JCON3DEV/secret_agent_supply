@@ -1,10 +1,15 @@
+* {
+  font-size: 18px;
+}
+
 body {
-  background-color: Azure;
+  display:flex;
+  justify-content: center;
+  flex-flow:column nowrap;
+  background-color: black;
   color: white;
   font-size: 18px;
   font-family: Helvetica;
-  display:flex;
-  justify-content: center;
 }
 
 .main_container {
@@ -20,18 +25,31 @@ body {
 
 .header {
   display:flex;
+  padding-left:0.5rem;
+  height:2.2rem;
+}
+.header img {
+  display: flex;
+  height:1.5rem;
+  justify-content: center;
+  padding-top:.33rem;
+}
+.header h2 {
+  font-size: 1rem;
+  padding:0.66rem 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /*end of header*/
 
 .banner {
   display:flex;
-
   background-image: url("../images/moto.jpeg");
   background-position: center;
   background-size: cover;
   height:25rem;
-
+  padding-left:0.5rem;
 }
 
 .new_arrival {
@@ -40,8 +58,10 @@ body {
   justify-content: center;
   width:20rem;
   font-size:2rem;
+  box-sizing: border-box;
   font-weight: bold;
-  height:20rem;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
   background-color: black;
 }
 /*end of banner*/
@@ -77,7 +97,7 @@ body {
   background-image: url("../images/pen.png");
   background-position:center;
   background-size: cover;
-  
+
   height:9rem;
 
   width:100%;
@@ -97,4 +117,28 @@ body {
 .sunglasses {
   height:15rem;
   border: 1px solid red;/*for degugging*/
+}
+
+.info {
+  border: 1px solid red;/*for degugging*/
+}
+.location {
+  border: 1px solid red;/*for degugging*/
+}
+
+.footer {
+  display: flex;
+  box-sizing: border-box;
+  height:5rem;
+  background-color: black
+  color:white;
+  text-align: left;
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 960px){
+  body{
+    max-width: 960px;
+    background-color: grey;/*for debugging*/
+  }
 }
