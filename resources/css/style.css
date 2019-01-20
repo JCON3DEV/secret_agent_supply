@@ -146,33 +146,82 @@ body {
   background-color: black;
   color: white;
   padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-weight:bold;
   font-size: 1rem;
+  text-align: center;
 }
 
 .merchandise_2{
   display:flex;
-  flex-flow: column nowrap;
+  flex-flow:column nowrap;
+  justify-content: space-between;
+  align-items: center;
   margin-top:3rem;
   margin-bottom:3rem;
-  width:30%;
-  height: 15rem;
   border: 1px solid green;/*for degugging*/
+  width:30%;
 }
 
+.watch {
+  margin-top:2rem;
 
+  margin-bottom:2rem;
+  display:flex;
+
+  background-image: url("../images/pen.png");
+  background-position:center;
+  background-size: cover;
+  border: 1px solid blue;/*for degugging*/
+  height:9rem;
+
+  width:150px;
+}
+
+.merchandise_2 h3 {
+  width:100%;
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight:bold;
+  font-size: 1rem;
+  text-align: center;
+}
 .merchandise_3 {
   display:flex;
-  flex-flow: column nowrap;
+  flex-flow:column nowrap;
+  justify-content: space-between;
+  align-items: center;
   margin-top:3rem;
   margin-bottom:3rem;
+  border: 1px solid green;/*for degugging*/
   width:30%;
-  height:15rem;
-
-  border: 1px solid purple;/*for degugging*/
 }
+
 .glasses{
+  margin-top:2rem;
+
+  margin-bottom:2rem;
+  display:flex;
+
+  background-image: url("../images/glasses.png");
+  background-position:center;
+  background-size: cover;
   border: 1px solid blue;/*for degugging*/
+  height:9rem;
+
+  width:150px;
+}
+.merchandise_3 h3 {
+  width:100%;
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight:bold;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .info {
@@ -180,6 +229,7 @@ body {
   display:flex;
   flex-direction:row;
   justify-content: space-between;
+  margin-bottom: 4rem;
 }
 .location {
   display:block;
