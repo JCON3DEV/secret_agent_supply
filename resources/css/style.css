@@ -20,6 +20,7 @@ body {
   background-color: black;
   box-sizing: border-box;
   max-width: 100%;/*for degugging*/
+  width:1250px;
   border: 4px solid white;
 }
 .banner,
@@ -110,6 +111,9 @@ body {
   max-width:960px;
 }
 
+.mobile_nav {
+  display:none;
+}
 /*end of nav*/
 .info_container {
   background-color: white;
@@ -296,16 +300,83 @@ body {
   border: 1px solid red;/*for degugging*/
 }
 
+
 @media only screen and (max-width: 960px){
   body{
     max-width: 960px;
     background-color: grey;/*for debugging*/
   }
+
+  .merchandise_3 {
+    display: none;
+  }
+.merchandise {
+    display:flex;
+    justify-content: space-between;
+}
+.merchandise_1 {
+  display:flex;
+  flex-flow:column nowrap;
+  align-items: center;
+  margin-top:3rem;
+  margin-bottom:3rem;
+  border: 1px solid green;/*for degugging*/
+  width:47%;
 }
 
-@media only screen and (max-width:1024px){
-  .nav {
+.merchandise_2 {
+display:flex;
+flex-flow:column nowrap;
+align-items: center;
+margin-top:3rem;
+margin-bottom:3rem;
+border: 1px solid green;/*for degugging*/
+width:47%;
+}
+.header {
+  margin: 0 auto;
+}
+.banner {
+  margin: 0 auto;
+}
+.info_container {
+  margin: 0 auto;
+}
+} /*end of grey screen*/
+
+
+@media only screen (max-width:1024px), (min-width:960px){
+  body {
+    background-color: green;/*for debugging*/
+    max-width: 1024px;
+  }
+  .banner {
+    font-size: 2rem;
+  }
+  .nav span {
     display:none;
   }
+  .mobile_nav {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    background-color: firebrick;
+
+  }
+  .main_container {
+    max-width: 960px;
+  }
+  .merchandise {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1024px;
+    overflow:hidden;
+  }
+}/*end of green screen*/
+
+@media only screen and (max-width:470){
 
 }
